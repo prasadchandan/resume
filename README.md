@@ -8,8 +8,9 @@
 
 <span class="info">
 
-[prasad.chandan@gmail.com](mailto:prasad.chandan+resume@gmail.com)
-[https://github.com/prasadchandan](https://github.com/prasadchandan)
+[prasad.chandan@gmail.com](mailto:prasad.chandan+resume@gmail.com) |
+[https://github.com/prasadchandan](https://github.com/prasadchandan) | 
+[https://chandan.prasad.earth](chandan.prasad.earth)
 
 </span>
 
@@ -31,9 +32,9 @@
 - Used profiling and other tools to find hot-spots in the application with an aim to improve the performance of the system
 - Improve the tooling around development, profiling, testing and any other space that could use a productivity boost
 - Evaluated the differences between how customers use the platform and find opportunities to improve performance by optimizing the algorithms or issues in the system. 
-- Overhauled a UI application that provided deeper visibility into the internals of the core allocation application - this was very useful for answering oncall questions from internal and external customers.
+- Overhauled a UI application that provided deeper visibility into the internals of the core allocation application - this was very useful for answering support questions from internal and external customers.
 - Evaluated the possibility of moving the system over to the Rust programming language using a minimal implementation of the core allocation algorithm. The limited prototype performed around 10x and the memory usage reduced by around 3X. 
-- Evaluated replacing the core data-structure used for storing the in-memory objects with a C++ library wrapped with N-API, this exhibited good performance characteristics.
+- Evaluated replacing the core data-structure used for storing the in-memory objects with a C++ library wrapped with N-API to improve performance.
 
 ### Dassault Systemes | <location> Waltham, MA </location> <time> Feb 2017 - Mar 2022 </time>
 #### SIMULIA Developer Manager
