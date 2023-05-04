@@ -9,7 +9,7 @@
 <span class="info">
 
 [prasad.chandan@gmail.com](mailto:prasad.chandan+resume@gmail.com)
-[![GitHub](https://simpleicons.org/icons/github.svg) https://github.com/prasadchandan](https://github.com/prasadchandan)
+[https://github.com/prasadchandan](https://github.com/prasadchandan)
 
 </span>
 
