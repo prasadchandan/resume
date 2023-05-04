@@ -96,7 +96,7 @@
 ### National Research Development Completion, Innovate India 2010 | <location> Bangalore, India </location> <time> Nov 2010 </time>
 #### Team Drone - Aeromodeling Group at SBM Jain College of Engineering
 
-- Presented an easy to deploy Unmanned Aerial Vehicle (UAV) designed for surveillance purposes, secured first place at the national level
+- Presented an easy to deploy Unmanned Aerial Vehicle (UAV) designed for agricultural and private property surveillance purposes, secured first place at the national level
 
 ### Bishop Cotton Boys’ School | <location>Bangalore, India </location> <time> Jun 2003 - Feb 2005 </time>
 #### Model Rocket Project - EBENDER 
