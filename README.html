@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Education</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 16px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <link rel="stylesheet" type="text/css" href="resume.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet"> 
+<p><span class="name">Chandan Prasad</span></p>
+<span class="info">
+<p><a href="mailto:prasad.chandan+resume@gmail.com">prasad.chandan@gmail.com</a>
+<a href="https://github.com/prasadchandan">https://github.com/prasadchandan</a></p>
+</span>
+<h2 id="education">Education</h2>
+<h3 id="georgia-institute-of-technology---atlanta-ga---jan-2011---may-2013-">Georgia Institute of Technology | <location> Atlanta, GA </location> <time> Jan 2011 - May 2013 </time></h3>
+<h4 id="master-of-science-in-aerospace-engieering">Master of Science in Aerospace Engieering</h4>
+<h3 id="visvesvaraya-technological-university---bangalore-india---jun-2006---jul-2010-">Visvesvaraya Technological University | <location> Bangalore, India </location> <time> Jun 2006 - Jul 2010 </time></h3>
+<h4 id="bachelor-of-engineering-mechanical-engineering">Bachelor of Engineering, Mechanical Engineering</h4>
+<h2 id="experience">Experience</h2>
+<h3 id="6-river-systems--shopify---westford-ma---apr-2022---may-2023-">6 River Systems / Shopify | <location> Westford, MA </location> <time> Apr 2022 - May 2023 </time></h3>
+<h4 id="senior-software-engineer---performance-optimization--algorithms">Senior Software Engineer - Performance Optimization &amp; Algorithms</h4>
+<ul>
+<li>Improved the performance of our robotic warehouse automation system.</li>
+<li>Used profiling and other tools to find hot-spots in the application with an aim to improve the performance of the system</li>
+<li>Improve the tooling around development, profiling, testing and any other space that could use a productivity boost</li>
+<li>Evaluated the differences between how customers use the platform and find opportunities to improve performance by optimizing the algorithms or issues in the system.</li>
+<li>Overhauled a UI application that provided deeper visibility into the internals of the core allocation application - this was very useful for answering oncall questions from internal and external customers.</li>
+<li>Evaluated the possibility of moving the system over to the Rust programming language using a minimal implementation of the core allocation algorithm. The limited prototype performed around 10x and the memory usage reduced by around 3X.</li>
+<li>Evaluated replacing the core data-structure used for storing the in-memory objects with a C++ library wrapped with N-API, this exhibited good performance characteristics.</li>
+</ul>
+<h3 id="dassault-systemes---waltham-ma---feb-2017---mar-2022-">Dassault Systemes | <location> Waltham, MA </location> <time> Feb 2017 - Mar 2022 </time></h3>
+<h4 id="simulia-developer-manager">SIMULIA Developer Manager</h4>
+<ul>
+<li>Improved the performance and scalability of the DigitalRock discretizer by utilizing input information to enhance initial decomposition, this provided up to a 10% improvement compared to prior releases. The discretizer is a piece of software that takes input geometry and case definitions and performs, booleans, geometry validation and cleanup and prepares the model for simulation.</li>
+<li>Added support to balance the load amongst the various discretization processes in a parallel run. This is required since the initial decomposition does not accurately capture the distribution of computational load in typical production case, more over the load cannot be determined a-priori, a dynamic load balancing scheme based on work stealing was developed to overcome this problem.</li>
+<li>Added the ability to re-decompose the domain in parallel to reduce fragmentation of the grid across various processes. This operation is intended to minimize the boundary of the domain owned by a process, which in turn reduces the volume of network calls and improves overall scalability.</li>
+</ul>
+<h3 id="exa-gmbh---stuttgart-germany---dec-2015---feb-2017-">Exa GmbH | <location> Stuttgart, Germany </location> <time> Dec 2015 - Feb 2017 </time></h3>
+<h4 id="senior-software-engineer">Senior Software Engineer</h4>
+<ul>
+<li>Augmented the file IO features in the PowerFLOW Discretizer to support distributing input file data to multiple processors and writing output files from data received from multiple processors.</li>
+<li>Created wrappers and additional utility methods around the MPI library to simplify the development of the parallel discretizer while providing greater visibility into the system to assist with debugging and profiling.</li>
+<li>Added shared memory support for the discretizer using the POSIX spec to amortize the cost of storing input information across all processors. This reduced the memory load on a node and improved scalability of the PowerFLOW Discretizer.</li>
+<li>Added support to read images, convert them to 3D geometry using the marching cubes algorithm and use the geometry in downstream disctretizations and simulations. This is used as a part of Exa DigitalROCK offering, these efforts along with the parallelization reduced turnaround time for large simulations from days and weeks to hours.</li>
+</ul>
+<h3 id="exa-corporation---burlington-ma-us---jul-2014---dec-2015-">Exa Corporation | <location> Burlington MA, US </location> <time> Jul 2014 - Dec 2015 </time></h3>
+<h4 id="senior-software-engineer-1">Senior Software Engineer</h4>
+<ul>
+<li>Improved the handling of ‘toroidal’ geometry (eg. Treating opposing faces of a cube as abutting) in the discretizer.</li>
+<li>Improved integration testing by creating a new test suite and streamlined the process to create new test cases.</li>
+<li>Added initial support for parallel discretizations in the next generation discretizer.</li>
+</ul>
+<h3 id="exa-corporation---burlington-ma-us---jul-2013---july-2014-">Exa Corporation | <location> Burlington MA, US </location> <time> Jul 2013 - July 2014 </time></h3>
+<h4 id="software-engineer">Software Engineer</h4>
+<ul>
+<li>Improved the robustness of the discretizer used in PowerFLOW for complex geometries by integrating an updated geometry kernel</li>
+<li>Developed and maintained high performance support libraries used in the discretizer and in other applications at Exa Corp.</li>
+<li>Improved memory efficiency of the discretizer by migrating some low level components to using paged allocation.</li>
+</ul>
+<h3 id="georgia-institute-of-technology--aerothermodynamics-research-and-technology-lab-artlab---atlanta-ga-us---jan-2011---may-2013-">Georgia Institute of Technology – Aerothermodynamics Research and Technology Lab (ARTLab) | <location> Atlanta GA, US </location> <time> Jan 2011 - May 2013 </time></h3>
+<h4 id="graduate-research-assistant">Graduate Research Assistant</h4>
+<ul>
+<li>Extended the Normal Ray Refinement (NRR) methodology to 3D Bodies in NASCART-GT (a cartesian gird based naiver-stokes solver for hypersonic flows), reducing computational cost of viscous simulations by 30-60% with minimal loss in accuracy</li>
+<li>Streamlined the programming procedures in the lab by introducing IDE’s integrated with source versioning systems, documentation systems, profiling and performance analysis tools, reducing the time for feature additions, bug fixes and increasing collaboration.</li>
+<li>Developing a solver based on the cartesian grid methodology using C++ (ported features from the Fortran based codebase) - this effort lead to a 15x performance increase during grid generation</li>
+</ul>
+<h3 id="sbm-jain-college-of-engineering---bangalore-india---sep-2009---jul-2010-">SBM Jain College of Engineering | <location> Bangalore, India </location> <time> Sep 2009 - Jul 2010 </time></h3>
+<h4 id="research-associate">Research Associate</h4>
+<ul>
+<li>Conducted an experimental study of the machinability characteristics of Aluminum Silicon to improve the quality of automotive parts.</li>
+<li>Managed staffing of the research team, budgets and Inventory. Also managed communications with other research institutes to reduce duplication of work and to improve overall value for the research funds.</li>
+</ul>
+<h2 id="other-projects">Other Projects</h2>
+<h3 id="ahs-student-design-competition--fuselage-aerodynamics-lead---atlanta-ga-us---jan-2012---aug-2012-">AHS Student Design Competition – Fuselage Aerodynamics Lead | <location> Atlanta GA, US </location> <time> Jan 2012 - Aug 2012 </time></h3>
+<h4 id="georgia-institute-of-technology-atlanta---graduate-team">Georgia Institute of Technology, Atlanta - Graduate Team</h4>
+<ul>
+<li>Analyzed flows over a variety of fuselage geometries and optimized the shape of the fuselage to exceed design requirements</li>
+<li>Conducted design studies to determine the effect of various types of landing gear on the performance of the aircraft</li>
+</ul>
+<h3 id="sae-aerodesign-competition-2010---west---team-captain---van-nuys-ca-us---jan-2010---mar-2010-">SAE Aerodesign Competition 2010 - WEST - Team Captain | <location> Van Nuys CA, US </location> <time> Jan 2010 - Mar 2010 </time></h3>
+<h4 id="team-drone---aeromodeling-group-at-sbm-jain-college-of-engineering">Team Drone - Aeromodeling Group at SBM Jain College of Engineering</h4>
+<ul>
+<li>Developed MATLAB code to conduct multi-variable optimization of design parameters for Micro Air Vehicle (MAV) configuration</li>
+<li>Designed the MAV using SolidWorks and analyzed the design in CFD in order to reduce manufacturing and performance uncertainties</li>
+<li>Presented technical report at the finals, securing first place in presentation &amp; third overall among 45 universities</li>
+</ul>
+<h3 id="national-research-development-completion-innovate-india-2010---bangalore-india---nov-2010-">National Research Development Completion, Innovate India 2010 | <location> Bangalore, India </location> <time> Nov 2010 </time></h3>
+<h4 id="team-drone---aeromodeling-group-at-sbm-jain-college-of-engineering-1">Team Drone - Aeromodeling Group at SBM Jain College of Engineering</h4>
+<ul>
+<li>Presented an easy to deploy Unmanned Aerial Vehicle (UAV) designed for surveillance purposes, secured first place at the national level</li>
+</ul>
+<h3 id="bishop-cotton-boys-school--bangalore-india---jun-2003---feb-2005-">Bishop Cotton Boys’ School | <location>Bangalore, India </location> <time> Jun 2003 - Feb 2005 </time></h3>
+<h4 id="model-rocket-project---ebender">Model Rocket Project - EBENDER</h4>
+<ul>
+<li>Designed and fabricated model rocket using ‘off-the-shelf’ parts to test the performance of an indigenously designed rocket motor that was developed by us.</li>
+<li>Worked in collaboration with Indian Space Research Organization (ISRO) for final testing and launch logistics</li>
+<li>Received nation wide recognition and also mentioned in the LIMCA book of records (2005) for this project</li>
+</ul>
+<h2 id="awards-and-achievements">Awards and Achievements</h2>
+<ul>
+<li>Awarded the Maiden Cup for the best character influence and leadership qualities amongst the graduating class - 2005</li>
+<li>Given the Golden crest, the highest honor given to any Student/Alumnus of Bishop Cotton Boys School for achievements beyond the regular curriculum, Bangalore - 2005</li>
+</ul>
+<h2 id="publications">Publications</h2>
+<p>Robert A, Kobolov V I, Ruffin S M, Manmohan Chandan P, Zaki M, “Implementation and Evaluation of Normal Ray Refinement Technique in Adaptive Cartesian Framework”, 42nd AIAA Fluid Dynamics Conference and Exhibit, 2012</p>
+
+        
+        
+    </body>
+    </html>

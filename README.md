@@ -24,6 +24,17 @@
 
 ## Experience
 
+### 6 River Systems / Shopify | <location> Westford, MA </location> <time> Apr 2022 - May 2023 </time>
+#### Senior Software Engineer - Performance Optimization & Algorithms
+
+- Improved the performance of our robotic warehouse automation system. 
+- Used profiling and other tools to find hot-spots in the application with an aim to improve the performance of the system
+- Improve the tooling around development, profiling, testing and any other space that could use a productivity boost
+- Evaluated the differences between how customers use the platform and find opportunities to improve performance by optimizing the algorithms or issues in the system. 
+- Overhauled a UI application that provided deeper visibility into the internals of the core allocation application - this was very useful for answering oncall questions from internal and external customers.
+- Evaluated the possibility of moving the system over to the Rust programming language using a minimal implementation of the core allocation algorithm. The limited prototype performed around 10x and the memory usage reduced by around 3X. 
+- Evaluated replacing the core data-structure used for storing the in-memory objects with a C++ library wrapped with N-API, this exhibited good performance characteristics.
+
 ### Dassault Systemes | <location> Waltham, MA </location> <time> Feb 2017 - Mar 2022 </time>
 #### SIMULIA Developer Manager
 
