@@ -16,7 +16,7 @@
 ## Education
 
 ### Georgia Institute of Technology | <location> Atlanta, GA </location> <time> Jan 2011 - May 2013 </time>
-#### Master of Science in Aerospace Engieering
+#### Master of Science in Aerospace Engineering
 
 
 ### Visvesvaraya Technological University | <location> Bangalore, India </location> <time> Jun 2006 - Jul 2010 </time>
