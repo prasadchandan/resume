@@ -1,0 +1,170 @@
+html {
+    padding: 16px;
+    margin: 0;
+}
+
+body {
+    display: block;
+    /* max-width: 700px; */
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.name {
+    font-size: 175%;
+    line-height: 150%;
+    font-weight: 300;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+}
+
+.info {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+h1 {
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 150%;
+    font-weight: bold;
+    border-bottom: 1px solid #bcbcbc;
+    color: #0D47A1;
+    margin-bottom: 0;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 100%;
+    font-weight: bold;
+    margin: 16px 0px 0px 0px;
+}
+
+h4 {
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+p, ul {
+    font-size: 100%;
+    margin: 0;
+    border-left: 2px solid #0D47A100;
+}
+
+ul:hover {
+    border-left: 2px solid #0D47A1;
+}
+
+ul, ol {
+    padding: 0 0 0 1.5rem;
+    margin: 0;
+}
+
+li {
+    line-height: 150%;
+    /* change this for tighter spacing */
+    /* default 150% */
+}
+
+a {
+    color: #0D47A1;
+}
+
+code {
+    color: black;
+}
+
+time {
+    float: right;
+    font-size: inherit;
+    font-weight: 400;
+    margin: 0;
+}
+
+location {
+    font-weight: normal;
+    font-style: italic;
+    color: #878686;
+    margin: 0;
+}
+
+.summaryicon {
+    float: right;
+    font-size: inherit;
+    font-weight: 500;
+    margin: 0;
+    transition: 0.25s transform ease;
+}
+
+summary {
+    outline: none;
+    display: block;
+    color: black;
+    position: relative;
+    cursor: pointer;
+}
+
+details {
+    box-sizing: border-box;
+    margin-top: 5px;
+    background: white;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] > summaryicon {
+    transform: rotate(90deg);
+}
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+    body {
+        max-width: 600px;
+    }
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+    body {
+        max-width: 768px;
+    }
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+    body {
+        max-width: 992px;
+    }
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+    body {
+        max-width: 1200px;
+    }
+
+    .name {
+        font-size: 300%;
+        font-weight: 200;
+    }
+ } 
+

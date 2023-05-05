@@ -1,29 +1,68 @@
-<link rel="stylesheet" type="text/css" href="resume.css">
+<title> Chandan Prasad - Resume </title>
+
+<link rel="stylesheet" type="text/css" href="resume-web.css">
+<link rel="stylesheet" type="text/css" media="print" href="resume-print.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&family=Raleway:wght@300;400&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
-
-<span class="name">Chandan Prasad</span>
+<span class="name" data-value="Chandan Prasad">Chandan Prasad</span>
 
 <span class="info">
 
-[prasad.chandan@gmail.com](mailto:prasad.chandan+resume@gmail.com) |
+<span class="material-symbols-outlined">mail</span>
+<span>prasad</span>.<span>chandan</span><span>@</span>gmail.com |
+<span class="material-symbols-outlined">terminal</span>
 [https://github.com/prasadchandan](https://github.com/prasadchandan) | 
-[https://chandan.prasad.earth](chandan.prasad.earth)
+<span class="material-symbols-outlined">wysiwyg</span>
+[https://chandan.prasad.earth](https://chandan.prasad.earth) | 
+<span class="material-symbols-outlined">smartphone</span>
+<span>4</span><span>0</span>4</span>-<span>7</span><span>59</span>-<span>33</span><span>7</span><span>3</span>
 
 </span>
 
-## Education
+<script> 
+// Effect described in https://www.youtube.com/watch?v=W5oawMJaXbU
+const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const LETTERS_SMALL = "abcdefghijklmnopqrstuvwxyz";
 
-### Georgia Institute of Technology | <location> Atlanta, GA </location> <time> Jan 2011 - May 2013 </time>
-#### Master of Science in Aerospace Engineering
+function renderTitleEffect(event) {
+    let iterations = 0;
+    const original = event.target.dataset.value;
+    const interval = setInterval(() => {
+        event.target.innerText = event.target.innerText.split("")
+            .map((letter, index) => {
+                if (index < iterations) {
+                    return original[index];
+                }
+                if (original[index] === original[index].toUpperCase()) {
+                    return LETTERS[Math.floor(Math.random() * 26)];
+                }
+                else {
+                    return LETTERS_SMALL[Math.floor(Math.random() * 26)];
+                }
+            })
 
+            .join("");
 
-### Visvesvaraya Technological University | <location> Bangalore, India </location> <time> Jun 2006 - Jul 2010 </time>
-#### Bachelor of Engineering, Mechanical Engineering
+        if (iterations > original.length) clearInterval(interval);
 
-## Experience
+        iterations += 1 / 3;
+    }, 20);
+}
+
+document.getElementsByClassName("name")[0].onpageshow = event => renderTitleEffect(event);
+document.getElementsByClassName("name")[0].onmouseover = event => renderTitleEffect(event);
+
+</script>
+
+<details open>
+<summary>
+
+## Experience  <span class="material-symbols-outlined summaryicon">expand_less</span>
+
+</summary>
 
 ### 6 River Systems / Shopify | <location> Westford, MA </location> <time> Apr 2022 - May 2023 </time>
 #### Senior Software Engineer - Performance Optimization & Algorithms
@@ -35,6 +74,7 @@
 - Overhauled a UI application that provided deeper visibility into the internals of the core allocation application - this was very useful for answering support questions from internal and external customers.
 - Evaluated the possibility of moving the system over to the Rust programming language using a minimal implementation of the core allocation algorithm. The limited prototype performed around 10x and the memory usage reduced by around 3X. 
 - Evaluated replacing the core data-structure used for storing the in-memory objects with a C++ library wrapped with N-API to improve performance.
+
 
 ### Dassault Systemes | <location> Waltham, MA </location> <time> Feb 2017 - Mar 2022 </time>
 #### SIMULIA Developer Manager
@@ -52,12 +92,14 @@
 - Added shared memory support for the discretizer using the POSIX spec to amortize the cost of storing input information across all processors. This reduced the memory load on a node and improved scalability of the PowerFLOW Discretizer.
 - Added support to read images, convert them to 3D geometry using the marching cubes algorithm and use the geometry in downstream disctretizations and simulations. This is used as a part of Exa DigitalROCK offering, these efforts along with the parallelization reduced turnaround time for large simulations from days and weeks to hours.
   
+
 ### Exa Corporation | <location> Burlington MA, US </location> <time> Jul 2014 - Dec 2015 </time>
 #### Senior Software Engineer
 
-- Improved the handling of ‘toroidal’ geometry (eg. Treating opposing faces of a cube as abutting) in the discretizer.
+- Improved the handling of 'toroidal' geometry (eg. Treating opposing faces of a cube as abutting) in the discretizer.
 - Improved integration testing by creating a new test suite and streamlined the process to create new test cases.
 - Added initial support for parallel discretizations in the next generation discretizer.
+
 
 ### Exa Corporation | <location> Burlington MA, US </location> <time> Jul 2013 - July 2014 </time>
 #### Software Engineer
@@ -66,6 +108,7 @@
 - Developed and maintained high performance support libraries used in the discretizer and in other applications at Exa Corp.
 - Improved memory efficiency of the discretizer by migrating some low level components to using paged allocation.
 
+
 ### Georgia Institute of Technology – Aerothermodynamics Research and Technology Lab (ARTLab) | <location> Atlanta GA, US </location> <time> Jan 2011 - May 2013 </time>
 #### Graduate Research Assistant
 
@@ -73,19 +116,44 @@
 - Streamlined the programming procedures in the lab by introducing IDE’s integrated with source versioning systems, documentation systems, profiling and performance analysis tools, reducing the time for feature additions, bug fixes and increasing collaboration.
 - Developing a solver based on the cartesian grid methodology using C++ (ported features from the Fortran based codebase) - this effort lead to a 15x performance increase during grid generation
 
+
 ### SBM Jain College of Engineering | <location> Bangalore, India </location> <time> Sep 2009 - Jul 2010 </time>
 #### Research Associate
 
 - Conducted an experimental study of the machinability characteristics of Aluminum Silicon to improve the quality of automotive parts.
 - Managed staffing of the research team, budgets and Inventory. Also managed communications with other research institutes to reduce duplication of work and to improve overall value for the research funds.
 
-## Other Projects
+</details>
 
-### AHS Student Design Competition – Fuselage Aerodynamics Lead | <location> Atlanta GA, US </location> <time> Jan 2012 - Aug 2012 </time>
+<details open>
+<summary>
+
+## Education <span class="material-symbols-outlined summaryicon">expand_less</span>
+
+</summary>
+
+### Georgia Institute of Technology | <location> Atlanta, GA </location> <time> Jan 2011 - May 2013 </time>
+#### Master of Science in Aerospace Engineering
+
+
+### Visvesvaraya Technological University | <location> Bangalore, India </location> <time> Jun 2006 - Jul 2010 </time>
+#### Bachelor of Engineering, Mechanical Engineering
+
+</details>
+
+<details open>
+<summary>
+
+## Other Projects <span class="material-symbols-outlined summaryicon">expand_less</span>
+
+</summary>
+
+### AHS Student Design Competition - Fuselage Aerodynamics Lead | <location> Atlanta GA, US </location> <time> Jan 2012 - Aug 2012 </time>
 #### Georgia Institute of Technology, Atlanta - Graduate Team
 
 - Analyzed flows over a variety of fuselage geometries and optimized the shape of the fuselage to exceed design requirements
 - Conducted design studies to determine the effect of various types of landing gear on the performance of the aircraft
+
 
 ### SAE Aerodesign Competition 2010 - WEST - Team Captain | <location> Van Nuys CA, US </location> <time> Jan 2010 - Mar 2010 </time>
 #### Team Drone - Aeromodeling Group at SBM Jain College of Engineering
@@ -99,19 +167,36 @@
 
 - Presented an easy to deploy Unmanned Aerial Vehicle (UAV) designed for agricultural and private property surveillance purposes, secured first place at the national level
 
-### Bishop Cotton Boys’ School | <location>Bangalore, India </location> <time> Jun 2003 - Feb 2005 </time>
+
+### Bishop Cotton Boys School | <location>Bangalore, India </location> <time> Jun 2003 - Feb 2005 </time>
 #### Model Rocket Project - EBENDER 
 
 - Designed and fabricated model rocket using ‘off-the-shelf’ parts to test the performance of an indigenously designed rocket motor that was developed by us.
 - Worked in collaboration with Indian Space Research Organization (ISRO) for final testing and launch logistics
 - Received nation wide recognition and also mentioned in the LIMCA book of records (2005) for this project
 
-## Awards and Achievements
+</details>
+
+<details open>
+<summary>
+
+## Awards and Achievements <span class="material-symbols-outlined summaryicon">expand_less</span>
+
+</summary>
+<br/>
 
 - Awarded the Maiden Cup for the best character influence and leadership qualities amongst the graduating class - 2005
 - Given the Golden crest, the highest honor given to any Student/Alumnus of Bishop Cotton Boys School for achievements beyond the regular curriculum, Bangalore - 2005
 
+</details>
 
-## Publications
+<details open>
+<summary>
 
+## Publications <span class="material-symbols-outlined summaryicon">expand_less</span>
+
+</summary>
+<br/>
 Robert A, Kobolov V I, Ruffin S M, Manmohan Chandan P, Zaki M, “Implementation and Evaluation of Normal Ray Refinement Technique in Adaptive Cartesian Framework”, 42nd AIAA Fluid Dynamics Conference and Exhibit, 2012
+
+</details>

@@ -16,4 +16,11 @@ The stylesheet used in this repository was derived from the version cereated by 
    1. Install - https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
    2. Markdown Preview to view the the rendered view
    3. `Ctrl + Shift + P` - Print Current Document to HTML
+
+
+## Known Issues 
+
+1. Export to PDF does not work as expected yet
+2. The detail expand icon does not change on collapse
+3. Save to PDF needs further modifications to reduce number of pages
    
