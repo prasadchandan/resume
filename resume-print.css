@@ -9,13 +9,13 @@ body {
     margin: 0 auto;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .name {
-    font-size: 175%;
-    line-height: 150%;
-    font-weight: bold;
+    font-size: 200%;
+    line-height: 120%;
+    font-weight: 400;
     display: block;
     font-family: 'Raleway', sans-serif;
     text-align: center;
@@ -24,8 +24,13 @@ body {
 .info {
     display: block;
     text-align: center;
-    font-size: 0.7rem;
-    margin-bottom: 0.75rem;
+    margin-top: 4px;
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+
+.info span {
+    text-align: center;
 }
 
 h1 {
@@ -33,27 +38,33 @@ h1 {
     text-align: center;
     font-weight: bold;
     padding: 0;
-    margin: 1rem 0;
+    margin: 1rem 1rem 0 0;
 }
 
 h2 {
-    font-size: 150%;
-    font-weight: bold;
+    font-size: 125%;
+    font-weight: 400;
     border-bottom: 1px solid #bcbcbc;
     color: #0D47A1;
-    /* margin: 0; */
+    margin: 0;
+    margin-top: 4px; 
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
 }
 
 h3 {
     font-size: 100%;
-    font-weight: bold;
-    margin: 0;
+    font-weight: 400;
+    margin: 16px 0px 0px 0px;
 }
 
 h4 {
     font-style: italic;
+    margin: 4px 0px 4px 0px;
+}
+
+.screenonly {
+    display: none;
 }
 
 p, ul {
@@ -62,12 +73,12 @@ p, ul {
 }
 
 ul, ol {
-    padding: 0 0 0 1.5rem;
+    padding: 0 0 0 1.2rem;
     margin: 0;
 }
 
 li {
-    line-height: 150%;
+    line-height: 125%;
     /* change this for tighter spacing */
     /* default 150% */
 }
@@ -86,6 +97,7 @@ li {
 
 a {
     color: #0D47A1;
+    text-decoration: none;
 }
 
 code {
@@ -95,7 +107,8 @@ code {
 time {
     float: right;
     font-size: inherit;
-    font-weight: bold;
+    font-weight: 400;
+    margin: 0;
 }
 
 location {
