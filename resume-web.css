@@ -109,6 +109,12 @@ location {
     margin: 0;
 }
 
+.skillgrid {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
 .summaryicon {
     float: right;
     font-size: inherit;
@@ -143,12 +149,39 @@ details[open] > summaryicon {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    body {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .name {
+        font-size: 250%;
+        font-weight: 200;
+    }
+
+    .skillgrid {
+        margin-top: 8px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     body {
         max-width: 600px;
+        font-size: 18px;
+    }
+
+    .name {
+        font-size: 250%;
+        font-weight: 200;
+    }
+
+    .skillgrid {
+        margin-top: 8px;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -156,6 +189,18 @@ details[open] > summaryicon {
 @media only screen and (min-width: 768px) {
     body {
         max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .name {
+        font-size: 300%;
+        font-weight: 200;
+    }
+
+    .skillgrid {
+        margin-top: 16px;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -170,10 +215,17 @@ details[open] > summaryicon {
 @media only screen and (min-width: 1200px) {
     body {
         max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .name {
         font-size: 300%;
         font-weight: 200;
+    }
+
+    .skillgrid {
+        margin-top: 16px;
+        grid-template-columns: repeat(4, 1fr);
     }
 }

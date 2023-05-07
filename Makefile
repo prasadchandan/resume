@@ -1,5 +1,5 @@
 html:
-	pandoc -f markdown README.md > index.html
+	pandoc -f markdown resume.md > index.html
 
 pdf: html
 	pandoc index.html --pdf-engine wkhtmltopdf -o chandan-prasad-resume-`date -I`.pdf
