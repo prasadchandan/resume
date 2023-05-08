@@ -12,6 +12,7 @@ I am Chandan Prasad, a full-stack developer with about 10 years of experience wo
    + TypeScript
    + Julia
    + HTML/CSS
+   + Java
 - Distributed and High Performance Computing
 - Performance Optimization
 - Numerical Methods and Computational Fluid Dynamics Simulations

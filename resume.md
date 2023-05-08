@@ -66,8 +66,8 @@ document.getElementsByClassName("name")[0].onmouseover = event => renderTitleEff
 <div class="skillgrid">
 
  <div>C/C++, Python, Rust, Go</div>
- <div> TypeScript/Javascript, Julia</div>
- <div>HTML/CSS, ReactJS, Svelte</div>
+ <div> TypeScript/Javascript, Julia, Java</div>
+ <div>HTML/CSS, ReactJS, Svelte, SQL</div>
  <div>Computational Geometry</div>
  <div>High Performance Computing</div>
  <div>Distributed Systems</div>
