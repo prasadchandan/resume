@@ -120,7 +120,7 @@ document.getElementsByClassName("name")[0].onmouseover = event => renderTitleEff
 - Added initial support for parallel discretizations in the next generation discretizer.
 
 
-### Exa Corporation | <location> Burlington MA, US </location> <time> Jul 2013 - July 2014 </time>
+### Exa Corporation | <location> Burlington MA, US </location> <time> Jul 2013 - Jul 2014 </time>
 #### Software Engineer
 
 - Improved the robustness of the discretizer used in PowerFLOW for complex geometries by integrating an updated geometry kernel
