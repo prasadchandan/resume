@@ -28,8 +28,6 @@ This repository contains the markdown code, css pages, README and a PDF of my re
 Please feel free to fork this repository and adapt it to your own resume if you like the presentation. 
 
 
-**I am currently looking for work, if you think my profile is a good fit - Please do reach out at the contact details provided in the links above!**
-
 ## Resume
 
 ![Resume](resume_images/chandan_prasad_resume_page_1.png)
