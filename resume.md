@@ -84,7 +84,7 @@ document.getElementsByClassName("name")[0].onmouseover = event => renderTitleEff
 
 </summary>
 
-### Symbotic Inc. | <location> Wilmington, MA </location> <time> May 2023 - Present </time>
+### Symbotic Inc. | <location> Wilmington, MA </location> <time> Jul 2023 - Present </time>
 #### Principal Software Engineer - Algorithms
 
 - Design and develop real-time distributed software systems that schedule and coordinate tasks for fleets of autonomous mobile robots in warehouse environments - most warehouse environments using this system have in excess of 1000 bots deployed. 
