@@ -65,8 +65,8 @@ document.getElementsByClassName("name")[0].onmouseover = event => renderTitleEff
 </summary>
 <div class="skillgrid">
 
- <div>C/C++, Python, Rust, Go</div>
- <div> TypeScript/Javascript, Julia, Java</div>
+ <div>C/C++, C#, Python, Rust, Go</div>
+ <div>TypeScript/Javascript, Julia, Java</div>
  <div>HTML/CSS, ReactJS, Svelte, SQL</div>
  <div>Computational Geometry</div>
  <div>High Performance Computing</div>
@@ -83,6 +83,16 @@ document.getElementsByClassName("name")[0].onmouseover = event => renderTitleEff
 ## Experience  <span class="material-symbols-outlined summaryicon screenonly">expand_less</span>
 
 </summary>
+
+### Symbotic Inc. | <location> Wilmington, MA </location> <time> May 2023 - Present </time>
+#### Principal Software Engineer - Algorithms
+
+- Design and develop real-time distributed software systems that schedule and coordinate tasks for fleets of autonomous mobile robots in warehouse environments - most warehouse environments using this system have in excess of 1000 bots deployed. 
+- Architect highly available, scalable software solutions for end-to-end autonomous supply chain operations serving major retail and wholesale customers.
+- Research and productize solutions for NP-Hard optimization problems using combinatorial optimization techniques to improve fleet efficiency.
+- Involved in cross-team effort to develop a simulator to model full system behavior to simplify and enable more rigorous testing before deploying changes to production while also providing a simpler setup for developers to use for debugging.
+- Implement asynchronous and multithreaded software for real-time robot fleet coordination across Windows and Linux platforms.
+
 
 ### 6 River Systems / Shopify | <location> Westford, MA </location> <time> Apr 2022 - May 2023 </time>
 #### Senior Software Engineer - Performance Optimization & Algorithms
